@@ -20,6 +20,7 @@ resource "aws_subnet" "public" {
 	}
 }
 
+/*
 # internet gateway
 resource "aws_internet_gateway" "example" {
         vpc_id = aws_vpc.example.id
@@ -83,4 +84,4 @@ resource "aws_route" "plivate" {
 	nat_gateway_id = aws_nat_gateway.example.id
 	destination_cidr_block = "0.0.0.0/0"
 }
-
+*/

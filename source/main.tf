@@ -3,6 +3,7 @@ provider "aws" {
   region = "ap-northeast-1"
 }
 
+/*
 # policy json
 data "aws_iam_policy_document" "allow_describe_region" {
 	statement {
@@ -11,6 +12,7 @@ data "aws_iam_policy_document" "allow_describe_region" {
 	resources = ["*"]
 	}
 }
+
 
 # drive module 
 module "describe_region_for_ec2" {
@@ -89,3 +91,4 @@ data "aws_iam_policy_document" "alb_log" {
 	}
  }
 }
+*/
