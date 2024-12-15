@@ -1,15 +1,15 @@
 # aws
 provider "aws" {
-	region = "ap-northeast-1"
+  region = "ap-northeast-1"
 }
 
 # backend
 terraform {
-	backend "s3" {
-		bucket = "cicd-bucket-yutarooo216"
-		key = "test/terraform.tfstate"
-		region = "ap-northeast-1"
-		encrypt = true
+  backend "s3" {
+    bucket  = "cicd-bucket-yutarooo216"
+    key     = "test/terraform.tfstate"
+    region  = "ap-northeast-1"
+    encrypt = true
   }
 }
 
