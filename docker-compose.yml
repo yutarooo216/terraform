@@ -1,0 +1,12 @@
+version: '3'
+services:
+  terraform:
+    image: hashicorp/terraform:1.5.7
+    env_file:
+      - .env
+    volumes:
+      - ./source:/terraform
+    working_dir: /terraform
+    entrypoint: ash
+    tty: true
+    platform: linux/amd64
